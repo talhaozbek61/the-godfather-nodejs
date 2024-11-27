@@ -1,0 +1,14 @@
+{
+  "name": "the-godfather-nodejs",
+  "version": "1.0.0",
+  "description": "A web app that provides dynamic character profiles from The Godfather movie series, built with Node.js using the native HTTP module.",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env.local server.js"
+  },
+  "author": "Talha ÖZBEK",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.10"
+  }
+}
