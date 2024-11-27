@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +8,9 @@
       <%= character.name %> <%= character.lastname %> - The Godfather
     </title>
   </head>
-  <body class="bg-[#020202] text-[#DDCF96] font-medium mx-auto max-w-7xl">
+  <body
+    class="bg-[#020202] text-[#DDCF96] font-medium mx-auto max-w-7xl h-full"
+  >
     <!-- Header -->
     <%- include("partials/header") %>
 
@@ -66,14 +68,14 @@
 
     <!-- Profile -->
     <div
-      class="sm:flex mx-auto sm:justify-start items-start gap-10 sm:p-6 p-12"
+      class="sm:flex mx-auto sm:justify-start items-start gap-10 sm:p-6 p-12 min-h-full"
     >
       <!-- Image -->
       <div class="mb-4 shrink-0 sm:mb-0 rounded-xl">
         <img
           src="<%= character.image %>"
           alt="<%= character.name  %>"
-          class="mx-auto size-64 shrink-0 rounded-xl ring ring-[#DDCF96] hover:scale-110 hover:ring-0 duration-300"
+          class="mx-auto size-64 shrink-0 rounded-xl ring ring-[#DDCF96] hover:scale-110 hover:ring-0 duration-300 object-cover"
         />
       </div>
 
